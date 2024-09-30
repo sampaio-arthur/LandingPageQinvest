@@ -26,15 +26,15 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #ffffffad;
     font-weight: 600;
 
 }
 
 .nav-item.active a {
 
-    color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+    color: #ffffff;
+    border-bottom: 3px solid #e9a209;
 
 
 }
@@ -60,6 +60,7 @@ header {
         cursor: pointer;
     }
 
+    
     #mobile_menu.active{
         display: flex;
         flex-direction: column;
