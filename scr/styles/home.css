@@ -1,7 +1,9 @@
 #home {
     display: flex;
     min-height: calc(100vh - 91px);
+
 }
+
 
 #cta {
     width: 35%;
@@ -34,10 +36,27 @@
 
 #cta_buttons {
     display: flex;
-    gap: 24px;
+    gap: 8px;
+    padding: 32px 1px;
+    font-weight: 500;
+    border-radius: 12px;
 }
 
 #cta_buttons a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: 600;
+    padding: 3px 0px;
+    text-align: center;
+}
+
+
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    padding: 32px 1px;
+    font-weight: 500;
+    border-radius: 12px;
+
 }

@@ -9,7 +9,7 @@
 
 body {
     background-color: #2e2d29d4;
-    font-family: 'Sixtfour Convergence', sans-serif;
+    
     
 }
 
@@ -35,6 +35,28 @@ section {
 
 .btn-default:hover{
     background-color: #252421c4;
+    transform: scale(1.1);
 
 }
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
 
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+    
+}
+
+.social-media-buttons a:hover{
+    background-color: #343129b1;
+    transform: scale(1.1);
+}
