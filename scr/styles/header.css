@@ -8,14 +8,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-   
+    margin-bottom: 0; /* Remove espaço abaixo da navbar */
+    padding-bottom: 0; /* Remove qualquer espaçamento interno */
+    
+    
 }
 
 #nav_logo {
     height: 50px; /* Define a altura da logo */
     width: auto;  /* Mantém a proporção da largura */
     margin-right: 20px; /* Adiciona um espaço entre a logo e o resto dos elementos */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+#nav_logo:hover{
+    transform: scale(1.1);
 }
 
 #nav_list {

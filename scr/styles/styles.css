@@ -52,7 +52,10 @@ section {
     background-color: #ffffff;
     font-size: 1.25rem;
     border-radius: 10px;
+    text-decoration: none;
     transition: background-color .3s ease;
+    color: #2e2424;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -60,3 +63,4 @@ section {
     background-color: #343129b1;
     transform: scale(1.1);
 }
+
