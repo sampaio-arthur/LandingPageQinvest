@@ -2,47 +2,46 @@
     position: relative;
     min-width: 30vh;
     min-height: 100vh; /* Define uma altura mínima para preencher a tela */
-    margin: 0; /* Remove margens externas */
-    padding: 0; /* Remove preenchimentos internos */
+    margin: 0;
+    padding: 0;
 }
-
 
 #home::before {
     content: "";
     position: absolute;
-    top: -50px;
+    top: 0; /* Ajustado para garantir que o fundo cubra toda a seção */
     left: 0;
     width: 100%;
-    height: 100%; /* Certifique-se de que esteja definido como 100% */
+    height: 100%;
     background-image: url('../images/1Foto2K.png');
     background-size: cover;
     background-position: center;
     z-index: -1; /* Coloca a imagem atrás do conteúdo */
-    opacity: 0.7; /* Define a opacidade da imagem de fundo */
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 1); /* Vinheta escura mais forte */
+    opacity: 0.7;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 1); /* Vinheta escura */
 }
 
-
-
 #cta {
-    width: 35%;
+    width: 100%; /* Ocupa a largura completa para centralizar corretamente */
+    height: 100vh; /* Garante que o conteúdo ocupe a altura total da viewport */
     display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     flex-direction: column;
+    text-align: center; /* Centraliza o texto */
     gap: 28px;
-    margin-top: 5%;
-
+    padding: 0 20px; /* Adiciona padding para evitar que o texto encoste nas laterais */
 }
 
 #cta .title {
-    font-size: 4rem;
-    color: #ffffff
-
+    font-size: 5rem;
+    color: #ffffff;
+    margin: 0;
 }
-
 
 #cta .description {
     font-family: Arial, Helvetica, sans-serif;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -53,7 +52,6 @@
     font-size: 2.5rem;
 }
 
-/* Ajustes para o layout dos botões */
 #cta_buttons {
     display: flex;
     gap: 8px;
@@ -70,21 +68,29 @@
     text-align: center;
 }
 
-
-
 #phone_button {
     display: flex;
     gap: 8px;
     padding: 14px 8px;
     font-weight: 500;
     border-radius: 12px;
-
 }
 
-/* .shape {
-    background-color: #ffe8b4;
-    width: 50%;
-    height: 100%;
-    position: absolute;
+/* Estilos Responsivos */
+@media screen and (max-width: 1170px) {
+    #cta {
+        padding: 0 10px; /* Reduz o padding para telas menores */
+    }
 
-} */
+    #cta .title {
+        font-size: 3rem; /* Diminui o tamanho do título em telas menores */
+    }
+
+    #cta .description {
+        font-size: 1.5rem;
+    }
+
+    #cta .description span {
+        font-size: 2rem;
+    }
+}

@@ -1,6 +1,7 @@
 header {
     width: 100%;
     padding: 28px 8%;
+    background-color: #333; /* Exemplo de fundo cinza */
 }
 
 #navbar {
@@ -8,43 +9,37 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0; /* Remove espaço abaixo da navbar */
-    padding-bottom: 0; /* Remove qualquer espaçamento interno */
-    
-    
+    margin-bottom: 0;
+    padding: 0 20px; /* Ajustado para manter a estrutura */
 }
 
 #nav_logo {
-    height: 50px; /* Define a altura da logo */
-    width: auto;  /* Mantém a proporção da largura */
-    margin-right: 20px; /* Adiciona um espaço entre a logo e o resto dos elementos */
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 
-#nav_logo:hover{
+#nav_logo:hover {
     transform: scale(1.1);
 }
 
 #nav_list {
     display: flex;
     list-style: none;
-    gap:48px; /* espeço entre nomes na navbar */
+    gap: 48px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: #ffffffad;
     font-weight: 600;
-
 }
 
 .nav-item.active a {
-
     color: #ffffff;
     border-bottom: 3px solid #e9a209;
-
-
 }
 
 #mobile_btn {
@@ -60,7 +55,7 @@ header {
         display: none;
     }
 
-    #mobile_btn{
+    #mobile_btn {
         display: block;
         border: none;
         background-color: transparent;
@@ -68,8 +63,11 @@ header {
         cursor: pointer;
     }
 
-    
-    #mobile_menu.active{
+    #navbar {
+        justify-content: space-between; /* Alinha logo à esquerda e menu mobile à direita */
+    }
+
+    #mobile_menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,7 +76,7 @@ header {
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
         margin: 12px 0px;
     }
 
