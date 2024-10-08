@@ -73,3 +73,7 @@ section {
     color: #ffffff;
     font-size: 1.563rem;
 }
+
+.section-subtitle span {
+    color : #e9a209
+}
