@@ -64,3 +64,12 @@ section {
     transform: scale(1.1);
 }
 
+.section-title {
+    color: #ffffff;
+    font-size: 2.1875rem;
+}
+
+.section-subtitle {
+    color: #ffffff;
+    font-size: 1.563rem;
+}
