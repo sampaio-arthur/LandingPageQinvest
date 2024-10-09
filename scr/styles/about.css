@@ -3,14 +3,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;  
+    position: relative;
+    min-width: 30vh;
+    min-height: 100vh; /* Define uma altura mínima para preencher a tela */
+    margin: 0;
+    padding: 0;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Ajustado para garantir que o fundo cubra toda a seção */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/a.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    opacity: 0.7;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 1); /* Vinheta escura */
 }
 
 #pontos {
-    width: 100%;
+    width: 180%;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 100px;
     margin-top: 32px;
 }
 
@@ -20,9 +39,11 @@
     border-radius: 20px;
     gap: 18px;
     width: 25%;
-    background-color: #ffffff; /* Fundo da caixa sem opacidade */
+    background-color: #ffffff;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.5);
-    position: relative; /* Necessário para posicionar a logo como fundo */
+    position: relative;
+    overflow: hidden;
+    
 }
 
 #p1::before, #p2::before {
@@ -32,17 +53,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('C:/Users/Sampaio/Desktop/LandingPageQinvest/scr/images/gg.png'); /* Caminho da logo */
+    background-image: url('C:/Users/Sampaio/Desktop/LandingPageQinvest/scr/images/ff.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    opacity: 0.3; /* Ajuste da opacidade da logo */
-    z-index: 0; /* Logo fica atrás do conteúdo */
+    background-size: 60rem;
+    opacity: 0.3;
+    z-index: 0;
 }
 
 #p1 * , #p2 * {
     position: relative;
-    z-index: 1; /* Conteúdo da caixa sobre a logo */
+    z-index: 1;
 }
 
 
@@ -55,6 +76,41 @@
    justify-content: center;
    font-size: 1rem;
    color: #ffff;
-   width: 30px;
-   height: 30px;
+   width: 40px;
+   height: 40px;
+   right: -1px;
+   top: -1px;
+   cursor: pointer;
+   border-radius: 0px 20px 0px 30px;
+
 }
+
+#ponto-title {
+    text-align: center;
+    font-size: 1.7rem;
+    
+}
+
+#ponto-description {
+    text-align: center;
+    justify-content: center;
+}
+
+#ponto-description span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 4rem;
+}
+
+.section-subtitle {
+   font-size: 2rem; 
+}
+
+.section-subtitle span {
+    font-size: 2.5rem; 
+ }
+
+ 
