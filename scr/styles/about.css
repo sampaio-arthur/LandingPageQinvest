@@ -5,7 +5,7 @@
     justify-content: center;
     position: relative;
     min-width: 30vh;
-    min-height: 100vh; /* Define uma altura mínima para preencher a tela */
+    min-height: 100vh; 
     margin: 0;
     padding: 0;
 }
@@ -13,16 +13,16 @@
 #about::before {
     content: "";
     position: absolute;
-    top: 0; /* Ajustado para garantir que o fundo cubra toda a seção */
+    top: 0; 
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url('../images/a.jpeg');
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    z-index: -1; 
     opacity: 0.7;
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 1); /* Vinheta escura */
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 1); 
 }
 
 #pontos {
@@ -33,17 +33,29 @@
     margin-top: 32px;
 }
 
-#p1, #p2 {
+#p1 {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    gap: 18px;
+    gap: 28px;
     width: 25%;
-    background-color: #ffffff;
+    background-color: #f7f7f7c7;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
     
+}
+
+#p2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 28px;
+    width: 25%;
+    background-color: #f7f7f7c7;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
 }
 
 #p1::before, #p2::before {
@@ -57,7 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60rem;
-    opacity: 0.3;
+    opacity: 0.15;
     z-index: 0;
 }
 
@@ -80,26 +92,57 @@
    height: 40px;
    right: -1px;
    top: -1px;
-   cursor: pointer;
    border-radius: 0px 20px 0px 30px;
+   cursor: pointer;
 
 }
 
 #ponto-title {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 1.7rem;
+    
+}
+
+#ponto-title2 {
+    margin-top: 18px;
     text-align: center;
     font-size: 1.7rem;
     
 }
 
 #ponto-description {
-    text-align: center;
+    font-size: 1.1rem;
+    margin: 25px;
     justify-content: center;
+    text-align: justify;
+}
+
+#ponto-description2 {
+    font-size: 1.1rem;
+    margin: 25px;
+    justify-content: center;
+    text-align: justify;
+}
+
+#ponto-description .centered-text {
+    justify-content: center; 
+}
+
+#ponto-description2 .centered-text {
+    justify-content: center; 
 }
 
 #ponto-description span {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+#ponto-description2 span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 .section-title {
     font-size: 4rem;

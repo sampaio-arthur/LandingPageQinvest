@@ -50,6 +50,8 @@ header {
     display: none;
 }
 
+
+
 @media screen and (max-width: 1170px) {
     #nav_list, #navbar .btn-default {
         display: none;
@@ -64,7 +66,7 @@ header {
     }
 
     #navbar {
-        justify-content: space-between; /* Alinha logo à esquerda e menu mobile à direita */
+        justify-content: space-between;
     }
 
     #mobile_menu.active {

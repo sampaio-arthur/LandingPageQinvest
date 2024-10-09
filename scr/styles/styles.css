@@ -38,6 +38,18 @@ section {
     transform: scale(1.1);
 
 }
+
+.btn-default a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor do botão */
+    display: inline-block; /* Para garantir que o link se comporte como um botão */
+}
+
+.btn-default a:hover {
+    color: inherit; /* Garante que a cor não mude no hover */
+}
+
+
 .social-media-buttons {
     display: flex;
     gap: 18px;
