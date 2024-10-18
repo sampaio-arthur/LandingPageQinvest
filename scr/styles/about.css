@@ -120,9 +120,11 @@
 
 #ponto-description2 {
     font-size: 1.1rem;
-    margin: 25px;
-    justify-content: center;
     text-align: justify;
+    margin: 60px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #ponto-description .centered-text {
@@ -131,6 +133,8 @@
 
 #ponto-description2 .centered-text {
     justify-content: center; 
+    text-align: center; 
+    
 }
 
 #ponto-description span {
@@ -154,6 +158,20 @@
 
 .section-subtitle span {
     font-size: 2.5rem; 
+ }
+
+ @media screen and (max-width: 1170px) {
+    #pontos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #p1 {
+        width: 50%;
+    }
+    #p2 {
+        width: 50%;
+    }
  }
 
  
