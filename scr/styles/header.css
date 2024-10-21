@@ -1,7 +1,10 @@
 header {
     width: 100%;
     padding: 28px 8%;
-    background-color: #333; /* Exemplo de fundo cinza */
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 #navbar {
@@ -10,7 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    padding: 0 20px; /* Ajustado para manter a estrutura */
+    padding: 0 20px;
 }
 
 #nav_logo {
