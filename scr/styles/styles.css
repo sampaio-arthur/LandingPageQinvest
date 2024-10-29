@@ -40,13 +40,13 @@ section {
 }
 
 .btn-default a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Usa a cor do botão */
-    display: inline-block; /* Para garantir que o link se comporte como um botão */
+    text-decoration: none; 
+    color: inherit; 
+    display: inline-block; 
 }
 
 .btn-default a:hover {
-    color: inherit; /* Garante que a cor não mude no hover */
+    color: inherit; 
 }
 
 
@@ -89,3 +89,4 @@ section {
 .section-subtitle span {
     color : #e9a209
 }
+

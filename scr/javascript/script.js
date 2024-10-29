@@ -13,4 +13,3 @@ document.getElementById('nav_logo').addEventListener('click', function() {
     location.reload();
 });
 
-

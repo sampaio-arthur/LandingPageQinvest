@@ -81,15 +81,15 @@
     }
 
     #cta .title {
-        font-size: 3.4rem;
+        font-size: 4rem;
         
     }
 
     #cta .description {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #cta .description span {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
