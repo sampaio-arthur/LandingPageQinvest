@@ -42,8 +42,7 @@
     background-color: #f7f7f7c7;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
 #p2 {
@@ -65,7 +64,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('C:/Users/Sampaio/Desktop/LandingPageQinvest/scr/images/ff.png');
+    background-image: url('C:/Users/Sampaio/Desktop/LDPage/scr/images/ff.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60rem;
@@ -94,7 +93,6 @@
    top: -1px;
    border-radius: 0px 20px 0px 30px;
    cursor: pointer;
-
 }
 
 #ponto-title {
@@ -124,7 +122,6 @@
     margin: 60px;
     align-items: center;
     justify-content: center;
-
 }
 
 #ponto-description .centered-text {
@@ -134,7 +131,6 @@
 #ponto-description2 .centered-text {
     justify-content: center; 
     text-align: center; 
-    
 }
 
 #ponto-description span {
@@ -162,29 +158,53 @@
 
  @media screen and (max-width: 1170px) {
     #pontos {
-        flex-wrap: wrap;
-        justify-content: center;
+       flex-wrap: wrap;
+       text-align: center;
     }
 
     #p1 {
-        width: 50%;
+        width: 50%; 
     }
     #p2 {
-        width: 50%;
+        width: 50%;    
     }
 
     .section-title {
-        font-size: 3.2rem;
-        justify-content: center; 
-        text-align: center;
-    
+        font-size: 2.5rem;
+        text-align: center;    
     }
 
     .section-subtitle {
-        justify-content: center; 
+        font-size: 1.5rem;
         text-align: center; 
-    
     }
- }
 
+    .section-subtitle span {
+        font-size: 2rem;
+        text-align: center;  
+     }
+
+    #ponto-description {
+       text-align: center;
+    }
+
+    #ponto-description span {
+        display: block; 
+        text-align: left; 
+    }
+
+    #ponto-description .centered-text {
+        justify-content: left; 
+        text-align: center;
+    }
+
+    #ponto-description .centered-text span {
+        text-align: left;
+        display: block;
+    }
+
+    #ponto-description2  {
+       text-align: left;
+    } 
+ }
  

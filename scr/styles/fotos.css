@@ -4,16 +4,16 @@
 
 /* Estilizando os botões do carrossel */
 .swiper-button-next, .swiper-button-prev {
-    color: #fff; /* Cor do ícone da seta */
+    color: #13101052; /* Cor do ícone da seta */
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para destaque */
+    background-color: rgba(0, 0, 0, 0); /* Fundo semitransparente para destaque */
     border-radius: 50%; /* Forma circular */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, transform 0.3s; /* Animação ao passar o mouse */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0); /* Sombra suave */
 }
 
 /* Posicionamento dos botões */
@@ -26,8 +26,6 @@
 
 /* Efeito ao passar o mouse sobre os botões */
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Altera a cor de fundo ao passar o mouse */
-    color: #333; /* Cor do ícone ao passar o mouse */
     transform: scale(1.1); /* Aumenta ligeiramente o botão */
 }
 
