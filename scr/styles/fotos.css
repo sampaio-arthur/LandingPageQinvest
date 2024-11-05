@@ -1,35 +1,122 @@
-#fotos, .swiper-container {
-    position: relative;
+#fotos {
+    max-width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-/* Estilizando os botões do carrossel */
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold; 
+    text-align: center; 
+    color: #e9a209; 
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+    position: relative; 
+    display: inline-block; 
+}
+
+.section-title::after {
+    content: ""; 
+    display: block; 
+    width: 60%; 
+    height: 4px; 
+    background-color: #ffffff; 
+    margin: 10px auto 0;
+    border-radius: 2px; 
+    transition: width 0.3s; 
+}
+
+.section-title:hover::after {
+    width: 100%; 
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 900px; 
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.swiper-slide {
+    display: flex; /* Permite centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.swiper-slide img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do slide */
+    height: auto; /* Mantém a proporção natural da imagem */
+    max-height: 80vh; /* Limita a altura máxima da imagem para 80% da altura da tela */
+    object-fit: contain; /* Ajusta a imagem ao contêiner sem distorcer */
+    border-radius: 8px;
+}
+
 .swiper-button-next, .swiper-button-prev {
-    color: #13101052; /* Cor do ícone da seta */
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0); /* Fundo semitransparente para destaque */
-    border-radius: 50%; /* Forma circular */
+    color: #ffffff;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s, transform 0.3s; /* Animação ao passar o mouse */
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s; 
+    position: absolute; /* Posiciona os botões fora do fluxo normal */
+    z-index: 10; /* Garante que os botões fiquem acima das imagens */
 }
 
-/* Posicionamento dos botões */
 .swiper-button-next {
-    right: 15px; /* Ajuste a distância da borda direita da galeria */
+    right: 20px; /* Adiciona espaçamento à direita */
 }
 .swiper-button-prev {
-    left: 15px; /* Ajuste a distância da borda esquerda da galeria */
+    left: 20px; /* Adiciona espaçamento à esquerda */
 }
 
-/* Efeito ao passar o mouse sobre os botões */
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+    transform: scale(1.1);
 }
 
-/* Estilizando o ícone de seta para centralizar */
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 1.2em; /* Tamanho do ícone */
+    font-size: 1.5em;
+    color: #e9a209; 
+}
+
+.swiper-pagination {
+    bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #fotos {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .swiper-container {
+        max-width: 100%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 40px;
+        height: 40px; 
+        right: 15px; /* Ajusta a posição direita para telas menores */
+        left: 15px; /* Ajusta a posição esquerda para telas menores */
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 1.2em;
+    }
+
+    .swiper-slide img {
+        max-height: 60vh; /* Ajusta a altura máxima para telas menores */
+    }
 }
